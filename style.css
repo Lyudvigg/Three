@@ -290,17 +290,11 @@ ul, #myUL {
     left: -29px;
 }
 
-.group-main-row:first-child::after {
-    content: '';
-    height: 122%;
-    top: 0%;
-}
-
 .group-main-row::after {
     content: '';
     background: #BCBCBC;
     position: absolute;
-    height: 122%;
+    height: calc(100% + 50px);
     width: 1.5px;
     left: 0px;
     top: 0%;
@@ -308,8 +302,11 @@ ul, #myUL {
 
 .group-main-row:last-child::after {
     content: '';
-    height: 20px;
-    top: 0;
+    height: 40px;
+    width: 4px;
+    background: #fff;
+    left: -1px;
+    top: 20.5px;
 }
 
 .main-row {
